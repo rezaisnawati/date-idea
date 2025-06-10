@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Date Idea WebGIS</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="couple-mode">
+
+  <!-- Navigasi dan Header -->
+  <nav class="main-nav">
+    <header>
+      <h1>Rekomendasi Date Idea di Yogyakarta</h1>
+    </header>
+    <ul>
+      <li><a href="#map">Map</a></li>
+      <li><a href="#informasi">Informasi</a></li>
+      <li><a href="#profil">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Eksplorasi Destinasi Date Yogyakarta</h1>
+      <p>Temukan tempat-tempat terbaik untuk date dan eksplorasi suasana kota dengan peta interaktif.</p>
+    </div>
+  </section>
+
+  <!-- Filter dan Map -->
+  <div class="controls">
+    <label for="typeFilter">Kategori Tempat:</label>
+    <select id="typeFilter">
+      <option value="all">Semua</option>
+    </select>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- INFORMASI TEMPAT TERKENAL -->
+  <section id="informasi" class="galeri-terkenal">
+    <h2>Tempat Terkenal di Yogyakarta</h2>
+    <div class="card-container">
+      <!-- Café -->
+      <div class="card">
+        <img src="img/pakpos.jpeg" alt="Kopi Pakpos">
+        <h3>Kopi Pakpos</h3>
+        <p>Lokasi: Malioboro. Café legendaris dengan suasana santai di tengah kota.</p>
+      </div>
+      <div class="card">
+        <img src="img/legend.jpg" alt="Legend Cafe">
+        <h3>Legend Cafe</h3>
+        <p>Lokasi: Jalan Abu Bakar Ali. Tempat nongkrong malam hari favorit anak muda Jogja.</p>
+      </div>
+      <!-- Taman -->
+      <div class="card">
+        <img src="img/tamanpintar.jpg" alt="Taman Pintar">
+        <h3>Taman Pintar</h3>
+        <p>Lokasi: Pusat Kota. Taman edukatif dengan wahana interaktif untuk semua umur.</p>
+      </div>
+      <div class="card">
+        <img src="img/gembira.jpg" alt="Taman Satwa Gembira Loka">
+        <h3>Gembira Loka Zoo</h3>
+        <p>Lokasi: Kotagede. Tempat rekreasi keluarga dengan koleksi satwa dan ruang hijau luas.</p>
+      </div>
+      <!-- Museum -->
+      <div class="card">
+        <img src="img/musv.jpeg" alt="Museum Benteng Vredeburg">
+        <h3>Museum Vredeburg</h3>
+        <p>Lokasi: Malioboro. Museum sejarah dengan diorama perjuangan bangsa Indonesia.</p>
+      </div>
+      <div class="card">
+        <img src="img/nasionalmus.jpg" alt="Jogja National Museum">
+        <h3>Jogja National Museum</h3>
+        <p>Lokasi: Wirobrajan. Museum seni kontemporer dengan pameran yang dinamis dan kreatif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFIL -->
+  <section id="profil" class="about section profil-bg">
+    <h2>Tentang Dashboard Ini</h2>
+
+  <p>
+    Dashboard ini dirancang untuk memberikan rekomendasi tempat yang ideal untuk aktivitas kencan atau “date” di Kota Yogyakarta. 
+    Tempat-tempat ini mencakup beragam suasana dan kategori seperti café estetik, taman terbuka yang tenang, museum yang penuh nilai sejarah, hingga perpustakaan bagi mereka yang menikmati suasana hening dan intelektual.
+  </p>
+
+  <p>
+    Pengguna dapat memanfaatkan fitur filter berdasarkan kategori tempat untuk menyaring titik-titik yang paling sesuai dengan preferensi atau suasana hati. 
+    Tampilan peta juga dilengkapi informasi visual yang mendukung, seperti ikon kategori dan jalan utama, guna memberikan gambaran lokasi yang lebih kontekstual.
+  </p>
+
+  <p>
+    Dengan pendekatan spasial berbasis WebGIS, dashboard ini diharapkan dapat menjadi referensi ringan sekaligus bermanfaat bagi warga lokal maupun wisatawan dalam mencari inspirasi tempat berkencan yang nyaman dan menyenangkan di Yogyakarta.
+  </p>
+  </section>
+
+  <!-- KONTAK -->
+  <footer id="kontak" class="footer">
+    <img src="img/penulis.png" alt="Foto Pembuat" class="foto-pembuat">
+    <h2>Tentang Pembuat</h2>
+    <p>Nama: <strong>Reza Isnawati</strong></p>
+    <p>NIM: <strong>2302070</strong></p>
+    <p>Instansi: <strong>Universitas Pendidikan Indonesia</strong></p>
+    <p>Email: <a href="mailto:rezaisnawati20@upi.edu">rezaisnawati20@upi.edu</a></p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+
+  <!-- JS Utama -->
+  <script src="script.js"></script>
+</body>
+</html>
